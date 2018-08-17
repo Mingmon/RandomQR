@@ -1,5 +1,11 @@
+body{
+  background-color: #de6a80;
+}
+
+
 h1,h2{
   color: #ffb4b8;
+  font-family: 'Athiti', sans-serif;
 }
 * {
     box-sizing: border-box;
