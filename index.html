@@ -6,6 +6,15 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <title>Hi</title>
+
+    <script>
+    $(function() {
+      $('.button').click(function(){
+        $("#bg").attr('src',"img/qrcode2.png");
+        return false;
+      });
+    });
+    </script>
   </head>
   <body>
     <div style="text-align:center">
@@ -16,7 +25,7 @@
     <img src="img/test1.gif" style="width:80%">
   </div>
   <div class="img-container-2">
-    <img src="img/qrcode.png" style="width:60%">
+    <img src="img/qrcode.png" id="bg" style="width:60%">
   </div>
   <div class="img-container-3">
     <img src="img/test2.gif" style="width:80%">
