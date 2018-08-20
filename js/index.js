@@ -8,6 +8,7 @@ $('.button').click(function() {
         ,"img/QRcode/เฟิน.png","img/QRcode/เฟินธนัชพร.png","img/QRcode/เฟิร์นวรนิษฐา.png" ];
       var imgRand = Math.floor((Math.random() * 9));
       $("#bg").attr('src',qrimg[imgRand]);
+      console.log(qrimg[imgRand]);
         },
         2700);
         return false;
