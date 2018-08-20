@@ -1,21 +1,44 @@
 $(function() {
-  var i=0;
-  var qrimg=["img/QRcode/เกม.png","img/QRcode/เซฟ.png","img/QRcode/เต้.png"
-    ,"img/QRcode/เนวัดดาว.png","img/QRcode/เบิร์ด.png","img/QRcode/เฟรม.png"
-    ,"img/QRcode/เฟิน.png","img/QRcode/เฟินธนัชพร.png","img/QRcode/เฟิร์นวรนิษฐา.png" ];
-$('.button').click(function() {
-  //alert("จะสุ่มล่ะนะ");
-  $("#bg").attr('src',"img/loading.gif");
+
+  var i = 0;
+  var qrimg = [
+    "img/QRcode/เกม.png",
+    "img/QRcode/เซฟ.png",
+    "img/QRcode/เต้.png",
+    "img/QRcode/เนวัดดาว.png",
+    "img/QRcode/เบิร์ด.png",
+    "img/QRcode/เฟรม.png",
+    "img/QRcode/เฟิน.png",
+    "img/QRcode/เฟินธนัชพร.png",
+    "img/QRcode/เฟิร์นวรนิษฐา.png"
+  ];
+
+  $('.button').click(function() {
+
+    //do before delay
+    $("#mainImg").attr('src', "img/loading.gif");
+    $("button").attr("disabled", "disabled");
+
     setTimeout(function() {
-      var imgRand = Math.floor((Math.random() * (9-i)));
-      $("#bg").attr('src',qrimg[imgRand]);
-      console.log(qrimg[imgRand]);
-      qrimg.splice(imgRand,1);
-      console.log(imgRand);
-      console.log(i);
-      i++;
-        },
-        2700);
-        return false;
-});
+      //do after delay
+      var imgRand = Math.floor((Math.random() * qrimg.length)); //  var imgRand = Math.floor((Math.random() * (9-i)));
+      $("#mainImg").attr('src', qrimg[imgRand]);
+
+      if (qrimg.length == 0) {
+        $("#mainImg").attr('src', "img/cat2.gif");
+        console.log("หมดแล้วจ้า");
+      } else {
+        $("button").removeAttr("disabled"); 
+        console.log(qrimg[imgRand]);
+        console.log("index of pic = " + imgRand);
+        console.log("count i = " + i);
+        console.log("array length =" + qrimg.length);
+        qrimg.splice(imgRand, 1);
+        i++;
+      }
+    }, 2700);
+
+    return false;
+  });
+
 });
