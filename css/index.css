@@ -1,6 +1,8 @@
 body {
-  background-image: url("cat2.gif");
   background-color: #de6a80;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
 }
 
 h1, h2 {
