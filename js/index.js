@@ -16,7 +16,7 @@ $(function() {
   $('.button').click(function() {
 
     //do before delay
-    $("#mainImg").attr('src', "img/321.gif");
+    $("#mainImg").attr('src', "img/count.gif");
     $("button").attr("disabled", "disabled");
     $("#rightImg").attr('src', "img/pink.jpg");
     $("#leftImg").attr('src', "img/pink.jpg");
