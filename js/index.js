@@ -105,7 +105,7 @@ $(function() {
       qrimg.splice(imgRand, 1);
       i++;
 
-    }, 2600);
+    }, 2650);
 
     return false;
   });
