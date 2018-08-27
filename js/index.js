@@ -68,7 +68,7 @@ $(function() {
     "img/QRcode/อุ๋มอิ๋ม.png",
     "img/QRcode/อุ๊ย.png",
     "img/QRcode/เอ็ม.png",
-    "img/QRcode/เอสโซ๋.png",
+    "img/QRcode/เอสโซ่.png",
     "img/QRcode/โอ๊ตตตตตต.png",
     "img/QRcode/โอม.png",
     "img/QRcode/ไอซ์.png",
@@ -99,12 +99,13 @@ $(function() {
       $("button").removeAttr("disabled");
       console.log(qrimg[imgRand]);
       console.log("index of pic = ", + imgRand);
-      console.log("count i = " + i);
-      console.log("array length =" + qrimg.length);
+      console.log("จำนวนคนที่เหลือ :" + (qrimg.length-1));
+      console.log("--------------------------");
+
       qrimg.splice(imgRand, 1);
       i++;
 
-    }, 2750);
+    }, 2600);
 
     return false;
   });
