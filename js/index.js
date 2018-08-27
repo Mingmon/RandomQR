@@ -99,7 +99,8 @@ $(function() {
       $("button").removeAttr("disabled");
       console.log(qrimg[imgRand]);
       console.log("index of pic = ", + imgRand);
-      console.log("จำนวนคนที่เหลือ :" + (qrimg.length-1));
+      console.log("จำนวนคนที่เหลือ :" + (
+      qrimg.length - 1));
       console.log("--------------------------");
 
       qrimg.splice(imgRand, 1);
