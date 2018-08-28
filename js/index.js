@@ -1,5 +1,4 @@
 $(function() {
-
   var i = 0;
   var qrimg = [
     "img/QRcode/กระต่าย.png",
@@ -78,10 +77,12 @@ $(function() {
   $('.button').click(function() {
 
     //do before delay
-    $("#mainImg").attr('src', "img/count.gif");
+    $("#mainImg").attr('src', "img/wait.gif");
     $("button").attr("disabled", "disabled");
-    $("#rightImg").attr('src', "img/pink.jpg");
-    $("#leftImg").attr('src', "img/pink.jpg");
+    $(".bg").css("background-image", "url('img/bg2.gif')");
+
+    /*$("#rightImg").attr('src', "img/pink.jpg");
+    $("#leftImg").attr('src', "img/pink.jpg");*/
 
     if (qrimg.length == 0) {
       $("#mainImg").attr('src', "img/cat2.gif");
@@ -94,8 +95,10 @@ $(function() {
       //do after delay
       var imgRand = Math.floor((Math.random() * qrimg.length)); //  var imgRand = Math.floor((Math.random() * (9-i)));
       $("#mainImg").attr('src', qrimg[imgRand]);
-      $("#rightImg").attr('src', "img/test2.gif");
-      $("#leftImg").attr('src', "img/test1.gif");
+      $(".bg").css("background-image", "url('img/bg3.gif')");
+      //$("body").css('background-image', 'url("bg3.gif")');
+      /*$("#rightImg").attr('src', "img/test2.gif");
+      $("#leftImg").attr('src', "img/test1.gif");*/
       $("button").removeAttr("disabled");
       console.log(qrimg[imgRand]);
       console.log("index of pic = ", + imgRand);
@@ -106,7 +109,7 @@ $(function() {
       qrimg.splice(imgRand, 1);
       i++;
 
-    }, 2650);
+    }, 2400);
 
     return false;
   });

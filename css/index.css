@@ -1,8 +1,10 @@
 body {
-  background-color: #de6a80;
+  background-image: url("bg.jpg");
+  background-color: #9961bc;
   background-size: 100%;
   background-repeat: no-repeat;
 }
+
 
 h1, h2 {
   color: #ffb4b8;
@@ -21,6 +23,7 @@ h1, h2 {
 
 .img-container-2 {
   float: left;
+  margin-top: 10%;
   width: 50%;
   padding: 5px;
 }
@@ -38,9 +41,9 @@ h1, h2 {
 }
 
 .button {
-  background-color: #ffb4b8;
+  background-color: #fefa75;
   border: none;
-  color: white;
+  color: #9961bc;
   padding: 16px 32px;
   text-align: center;
   font-size: 16px;
