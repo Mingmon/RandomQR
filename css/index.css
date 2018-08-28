@@ -1,14 +1,9 @@
 body {
+  font-family: 'Itim', cursive;
   background-image: url("bg.jpg");
   background-color: #9961bc;
   background-size: 100%;
   background-repeat: no-repeat;
-}
-
-
-h1, h2 {
-  color: #ffb4b8;
-  font-family: 'Athiti', sans-serif;
 }
 
 * {
@@ -41,6 +36,7 @@ h1, h2 {
 }
 
 .button {
+  font-family: 'Itim', cursive;
   background-color: #fefa75;
   border: none;
   color: #9961bc;
@@ -57,4 +53,11 @@ h1, h2 {
 
 .button:hover {
   opacity: 1
+}
+
+footer {
+  font-family: 'Itim', cursive;
+  color: #9961bc;
+  margin-top: 8%;
+  text-align: right;
 }
